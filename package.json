@@ -1,0 +1,23 @@
+{
+  "name": "practice",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vercel --prod"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0",
+    "vite-plugin-glsl": "^1.1.2"
+  },
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "dat.gui": "^0.7.9",
+    "events": "^3.3.0",
+    "three": "^0.150.1",
+    "vercel": "^28.18.5"
+  }
+}

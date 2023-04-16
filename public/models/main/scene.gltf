@@ -1,0 +1,728 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 52814,
+      "max": [
+        27.049253463745117,
+        43.53940200805664,
+        8.380096435546875
+      ],
+      "min": [
+        -27.049299240112305,
+        -55.28200149536133,
+        -7.428840160369873
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 633768,
+      "componentType": 5126,
+      "count": 52814,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 52814,
+      "max": [
+        24.656225204467773,
+        24.7968692779541
+      ],
+      "min": [
+        -5.519529819488525,
+        -8.796879768371582
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 62676,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1267536,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        30.10036849975586,
+        55.04130935668945,
+        10.986977577209473
+      ],
+      "min": [
+        -30.100400924682617,
+        -54.799800872802734,
+        -9.002470016479492
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2053944,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 422512,
+      "componentType": 5126,
+      "count": 65534,
+      "max": [
+        12.156264305114746,
+        16.0312442779541
+      ],
+      "min": [
+        -6.457029819488525,
+        -6.101579666137695
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 250704,
+      "componentType": 5125,
+      "count": 79821,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2840352,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        29.674074172973633,
+        55.048309326171875,
+        10.997356414794922
+      ],
+      "min": [
+        -29.67426872253418,
+        -22.350509643554688,
+        -9.002470016479492
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3626736,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 946784,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        14.234375953674316,
+        20.96873664855957
+      ],
+      "min": [
+        -6.187518119812012,
+        -5.8320231437683105
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 569988,
+      "componentType": 5125,
+      "count": 65910,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 4413120,
+      "componentType": 5126,
+      "count": 54689,
+      "max": [
+        30.10036849975586,
+        55.04130935668945,
+        10.997356414794922
+      ],
+      "min": [
+        -30.100400924682617,
+        -54.799800872802734,
+        -9.002470016479492
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5069388,
+      "componentType": 5126,
+      "count": 54689,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1471040,
+      "componentType": 5126,
+      "count": 54689,
+      "max": [
+        7.187520503997803,
+        7.023411750793457
+      ],
+      "min": [
+        -6.187518119812012,
+        -6.457029819488525
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 833628,
+      "componentType": 5125,
+      "count": 81030,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5725656,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        18.51076889038086,
+        58.96984100341797,
+        7.686692237854004
+      ],
+      "min": [
+        -18.660499572753906,
+        43.855899810791016,
+        -5.6903300285339355
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5726424,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        0.872704803943634,
+        0.07503903657197952,
+        0.92940354347229
+      ],
+      "min": [
+        -0.8641716837882996,
+        -0.0010920542990788817,
+        -0.9165166616439819
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1908552,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        0.7548829317092896,
+        0.3422849476337433
+      ],
+      "min": [
+        0.609375,
+        0.25634801387786865
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1157748,
+      "componentType": 5125,
+      "count": 96,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5727192,
+      "componentType": 5126,
+      "count": 649,
+      "max": [
+        25.522783279418945,
+        43.67388916015625,
+        9.031941413879395
+      ],
+      "min": [
+        -25.680601119995117,
+        -55.27730178833008,
+        -6.387985706329346
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5734980,
+      "componentType": 5126,
+      "count": 649,
+      "max": [
+        0.9924405813217163,
+        0.7482609152793884,
+        0.9987925291061401
+      ],
+      "min": [
+        -0.9924375414848328,
+        -0.9446728825569153,
+        -0.9718834161758423
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1909064,
+      "componentType": 5126,
+      "count": 649,
+      "max": [
+        10.039060592651367,
+        5.144497871398926
+      ],
+      "min": [
+        -5.273439884185791,
+        -8.75780963897705
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1158132,
+      "componentType": 5125,
+      "count": 783,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5742768,
+      "componentType": 5126,
+      "count": 248,
+      "max": [
+        9.476325988769531,
+        38.90396499633789,
+        8.132250785827637
+      ],
+      "min": [
+        -4.483508110046387,
+        -23.409400939941406,
+        3.690577507019043
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5745744,
+      "componentType": 5126,
+      "count": 248,
+      "max": [
+        0.9928713440895081,
+        1.0,
+        0.9994982481002808
+      ],
+      "min": [
+        -0.9997391104698181,
+        -1.0,
+        -0.8961188793182373
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1914256,
+      "componentType": 5126,
+      "count": 248,
+      "max": [
+        6.140617370605469,
+        5.64063024520874
+      ],
+      "min": [
+        -3.853519916534424,
+        -2.927730083465576
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1161264,
+      "componentType": 5125,
+      "count": 288,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "CsharpGamer (https://sketchfab.com/espinalluis92)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/rsi-galaxy-686dbbc15aa4411387141d5c968c375c",
+      "title": "RSI GALAXY"
+    },
+    "generator": "Sketchfab-14.62.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1162416,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1916240,
+      "byteOffset": 1162416,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5748720,
+      "byteOffset": 3078656,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 8827376,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "ObjectsSpaceshipsHoloviewer_ShipsMid_Modularmid_modular4",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.00339404,
+          0.00339404,
+          0.00339404,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.999321192
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "ObjectsSpaceshipsHoloviewer_ShipsMid_Modularmid_modular6",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "ObjectsSpaceshipsHoloviewer_ShipsMid_Modularmid_modular8",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8051296197344067
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "ObjectsSpaceshipsHoloviewer_ShipsMid_Modularmid_modular3",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0592358,
+          0.205587,
+          0.309671,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.963602480064
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "ObjectsSpaceshipsHoloviewer_ShipsMid_Modularmid_modular7",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.14231088617019816,
+          0.527359772669052,
+          0.5161240094385704,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9869403674360506
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular4_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular6_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular6_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular6_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular8_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 17,
+            "POSITION": 16,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular3_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 21,
+            "POSITION": 20,
+            "TEXCOORD_0": 22
+          },
+          "indices": 23,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular7_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 25,
+            "POSITION": 24,
+            "TEXCOORD_0": 26
+          },
+          "indices": 27,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "cce099d32a10487aa66c0fdd91e7db72.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "52"
+    },
+    {
+      "mesh": 0,
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular4_0"
+    },
+    {
+      "mesh": 1,
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular6_0"
+    },
+    {
+      "mesh": 2,
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular6_0"
+    },
+    {
+      "mesh": 3,
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular6_0"
+    },
+    {
+      "mesh": 4,
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular8_0"
+    },
+    {
+      "mesh": 5,
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular3_0"
+    },
+    {
+      "mesh": 6,
+      "name": "52_Objects/Spaceships/Holoviewer_Ships/Mid_Modular/mid_modular7_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
