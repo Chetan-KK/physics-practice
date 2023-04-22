@@ -13,7 +13,7 @@ export default class Plane {
         this.setPhysics();
     }
     setPlane() {
-        this.geometry = new THREE.PlaneGeometry(20, 20);
+        this.geometry = new THREE.PlaneGeometry(200, 200);
         this.material = new THREE.MeshStandardMaterial({
             side: THREE.DoubleSide,
             map: this.resources.dirtColorTexture,

@@ -2,7 +2,7 @@ import CANNON, { Vec3 } from "cannon";
 import * as THREE from 'three';
 import Experience from "../Experience";
 
-export default class Sphere {
+export default class Box {
     constructor () {
         this.experience = new Experience();
         this.scene = this.experience.scene;
@@ -22,68 +22,68 @@ export default class Sphere {
     setDebug() {
         if (this.debug.active) {
 
-            this.uiFolder = this.debug.ui.addFolder("sphere");
+            this.uiFolder = this.debug.ui.addFolder("Box");
 
 
-            this.debugProperties.createSphere = () => {
-                const radius = Math.random() * .5;
+            this.debugProperties.createBox = () => {
+                const w = Math.random();
+                const h = Math.random();
+                const d = Math.random();
                 const randomX = Math.random() - .5;
                 const randomZ = Math.random() - .5;
-                this.setSphere(radius, { x: randomX, y: 3, z: randomZ });
-                this.setPhysics(radius, { x: randomX, y: 3, z: randomZ });
+                this.setBox(w, h, d, { x: randomX, y: 3, z: randomZ });
+                this.setPhysics(w, h, d, { x: randomX, y: 3, z: randomZ });
             };
-            this.uiFolder.add(this.debugProperties, 'createSphere');
+            this.uiFolder.add(this.debugProperties, 'createBox');
 
             this.debugs();
         }
     }
-    setSphere(radius, position) {
-        this.geometry = new THREE.SphereGeometry(1, 16, 16);
-        this.geometry.scale(radius, radius, radius);
+    setBox(w, h, d, position) {
+        this.geometry = new THREE.BoxGeometry(2, 2, 2);
+        this.geometry.scale(w / 2, h / 2, d / 2);
         this.material = new THREE.MeshStandardMaterial({
             metalness: 1,
             roughness: 0
         });
 
-        this.sphere = new THREE.Mesh(this.geometry, this.material);
+        this.box = new THREE.Mesh(this.geometry, this.material);
 
-        this.sphere.castShadow = true;
-        this.sphere.position.set(position);
+        this.box.castShadow = true;
+        this.box.position.set(position.x, position.y, position.z);
 
-        this.scene.add(this.sphere);
+        this.scene.add(this.box);
 
     }
-    setPhysics(radius, position) {
-        this.shape = new CANNON.Sphere(radius);
+    setPhysics(w, h, d, position) {
+        this.shape = new CANNON.Box(new CANNON.Vec3(w / 2, h / 2, d / 2));
         this.body = new CANNON.Body({
             mass: 1,
             position: new CANNON.Vec3(0, 3, 0),
-            shape: this.shape
+            shape: this.shape,
         });
 
         this.body.position.copy(position);
 
         this.physics.world.addBody(this.body);
 
-
         this.objects.push({
-            sphere: this.sphere,
+            box: this.box,
             body: this.body
         });
 
-
         this.forceVec3 = new CANNON.Vec3(150, 0, 0);
-
         this.body.applyForce(this.forceVec3, new Vec3(0, 0, 0));
     }
     updatePhysics() {
 
         for (const object of this.objects) {
-            object.sphere.position.copy(object.body.position);
+            object.box.position.copy(object.body.position);
+            object.box.quaternion.copy(object.body.quaternion);
         }
 
         if (this.i < this.flashStrength) {
-            this.debugProperties.createSphere();
+            this.debugProperties.createBox();
         }
         this.i++;
 
