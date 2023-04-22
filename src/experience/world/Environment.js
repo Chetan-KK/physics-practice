@@ -28,6 +28,7 @@ export default class environment {
         this.environmentMap.texture.encoding = THREE.sRGBEncoding;
 
         this.scene.environment = this.environmentMap.texture;
+        this.scene.background = this.environmentMap.texture;
 
         this.environmentMap.updateMaterials = () => {
             this.scene.traverse((child) => {

@@ -10,18 +10,40 @@ export default class World {
         this.time = this.experience.time;
         this.scene = this.experience.scene;
         this.resources = this.experience.resources;
+        this.debug = this.experience.debug;
 
         this.resources.on('loaded', () => {
             this.loaded();
             this.isLoaded = true;
         });
 
+        this.debugProperties = {};
+        this.debugProperties.spaceSize = 5;
+
+        this.debugProperties.reset = () => {
+            this.sphere.reset();
+            this.box.reset();
+        };
+
+        this.setDebug();
+
+    }
+    setDebug() {
+        if (this.debug.active) {
+            this.debugFolder = this.debug.ui.addFolder('world');
+            this.debugFolder.add(this.debugProperties, "reset");
+            this.debugFolder.add(this.debugProperties, "spaceSize").min(2).max(20).step(.1).name("space size").onFinishChange(() => {
+                this.plane.updateSpaceSize(this.debugProperties.spaceSize);
+                this.sphere.updateSpaceSize(this.debugProperties.spaceSize);
+                this.box.updateSpaceSize(this.debugProperties.spaceSize);
+            });
+        }
     }
     loaded() {
         this.environment = new environment();
-        this.plane = new Plane();
-        this.sphere = new Sphere();
-        this.box = new Box();
+        this.plane = new Plane(this.debugProperties.spaceSize);
+        this.sphere = new Sphere(this.debugProperties.spaceSize);
+        this.box = new Box(this.debugProperties.spaceSize);
     }
     update() {
         if (this.isLoaded) {

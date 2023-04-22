@@ -8,6 +8,7 @@ import Resources from "./utils/Resources";
 import sources from "./sources";
 import Debug from "./utils/Debug";
 import Physics from "./Physics";
+import Sounds from "./utils/Sounds";
 
 let instance = null;
 
@@ -20,15 +21,16 @@ export default class Experience {
         instance = this;
 
         this.canvas = canvas;
+        this.debug = new Debug();
         this.sizes = new Sizes();
         this.time = new Time();
+        this.sounds = new Sounds();
         this.scene = new THREE.Scene();
         this.camera = new Camera();
         this.resources = new Resources(sources);
         this.world = new World();
         this.physics = new Physics();
         this.renderer = new Renderer();
-        this.debug = new Debug();
 
         this.canvas.addEventListener('dblclick', () => {
             if (!document.fullscreenElement) {

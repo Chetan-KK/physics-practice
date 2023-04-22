@@ -5,14 +5,31 @@ export default class Physics {
     constructor () {
         this.experience = new Experience();
         this.clock = this.experience.time.clock;
+        this.debug = this.experience.debug;
 
         this.world = new CANNON.World();
-        this.world.gravity.set(0, -9.82, 0);
+        this.world.broadphase = new CANNON.SAPBroadphase(this.world);
+        this.world.allowSleep = true;
+
+        this.debugProperties = {
+            gravityForce: -9.82
+        };
+
+        this.world.gravity.set(0, this.debugProperties.gravityForce, 0);
 
         this.oldElapsedTime = 0;
 
         this.setMaterials();
 
+        this.setDebug();
+    }
+    setDebug() {
+        if (this.debug.active) {
+            this.debugFolder = this.debug.ui.addFolder("physics");
+            this.debugFolder.add(this.debugProperties, "gravityForce").min(-55).max(10).step(.001).name("gravity").onChange(() => {
+                this.world.gravity.set(0, this.debugProperties.gravityForce, 0);
+            });
+        }
     }
 
 

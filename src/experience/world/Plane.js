@@ -3,17 +3,19 @@ import CANNON, { Vec3 } from 'cannon';
 import Experience from "../Experience";
 
 export default class Plane {
-    constructor () {
+    constructor (size) {
         this.experience = new Experience();
         this.scene = this.experience.scene;
         this.resources = this.experience.resources.items;
         this.physics = this.experience.physics;
 
+        this.size = size;
+
         this.setPlane();
         this.setPhysics();
     }
     setPlane() {
-        this.geometry = new THREE.PlaneGeometry(200, 200);
+        this.geometry = new THREE.PlaneGeometry(this.size * 2, this.size * 2);
         this.material = new THREE.MeshStandardMaterial({
             side: THREE.DoubleSide,
             map: this.resources.dirtColorTexture,
@@ -42,5 +44,12 @@ export default class Plane {
 
     }
     updatePhysics() {
+    }
+    updateSpaceSize(size) {
+        this.geometry.dispose();
+        this.material.dispose();
+        this.scene.remove(this.plane);
+        this.size = size;
+        this.setPlane();
     }
 }
