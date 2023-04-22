@@ -18,6 +18,8 @@ export default class Sphere {
 
         this.setDebug();
 
+        this.spaceSize = spaceSize;
+
         this.limit = { positive: this.spaceSize, nigative: -this.spaceSize };
 
     }
