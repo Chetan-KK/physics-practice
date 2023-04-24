@@ -14,6 +14,10 @@ export default class Physics {
         this.debugProperties = {
             gravityForce: -9.82
         };
+        this.debugProperties.resetGravity = () => {
+            this.debugProperties.gravityForce = -9.82;
+            this.world.gravity.set(0, this.debugProperties.gravityForce, 0);
+        };
 
         this.world.gravity.set(0, this.debugProperties.gravityForce, 0);
 
@@ -29,6 +33,7 @@ export default class Physics {
             this.debugFolder.add(this.debugProperties, "gravityForce").min(-55).max(10).step(.001).name("gravity").onChange(() => {
                 this.world.gravity.set(0, this.debugProperties.gravityForce, 0);
             });
+            this.debugFolder.add(this.debugProperties, "resetGravity");
         }
     }
 

@@ -34,14 +34,29 @@ export default class Box {
             this.debugProperties.height = 3;
 
 
+            this.x = -10;
+            this.y = .5;
+
             this.debugProperties.createBox = () => {
-                const w = Math.random();
-                const h = Math.random();
-                const d = Math.random();
-                const randomX = Math.random() - .5;
-                const randomZ = Math.random() - .5;
-                this.setBox(w, h, d, { x: randomX, y: this.debugProperties.height, z: randomZ });
-                this.setPhysics(w, h, d, { x: randomX, y: this.debugProperties.height, z: randomZ });
+                const w = 2;
+                const h = 1;
+                const d = 1;
+
+
+
+                const randomX = this.x;
+                const randomZ = 0;
+                this.setBox(w, h, d, { x: randomX, y: this.y, z: randomZ });
+                this.setPhysics(w, h, d, { x: randomX, y: this.y, z: randomZ });
+
+                this.x += 2;
+
+                console.log(this.x);
+
+                if (this.x == 10) {
+                    this.y += 1;
+                    this.x = -10;
+                }
             };
             this.uiFolder.add(this.debugProperties, 'createBox');
 
@@ -116,6 +131,7 @@ export default class Box {
         for (const object of this.objects) {
             this.physics.world.remove(object.body);
             this.scene.remove(object.box);
+            this.y = .5;
         }
     }
     updateSpaceSize(size) {

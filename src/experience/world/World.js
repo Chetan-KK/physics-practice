@@ -11,19 +11,25 @@ export default class World {
         this.scene = this.experience.scene;
         this.resources = this.experience.resources;
         this.debug = this.experience.debug;
+        this.events = this.experience.events;
 
         this.resources.on('loaded', () => {
             this.loaded();
             this.isLoaded = true;
+
+            this.events.on('canvasClick', () => {
+                console.log("e");
+            });
         });
 
         this.debugProperties = {};
-        this.debugProperties.spaceSize = 5;
+        this.debugProperties.spaceSize = 20;
 
         this.debugProperties.reset = () => {
             this.sphere.reset();
             this.box.reset();
         };
+
 
         this.setDebug();
 

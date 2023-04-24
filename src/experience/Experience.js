@@ -9,6 +9,7 @@ import sources from "./sources";
 import Debug from "./utils/Debug";
 import Physics from "./Physics";
 import Sounds from "./utils/Sounds";
+import Events from "./utils/Events";
 
 let instance = null;
 
@@ -24,6 +25,7 @@ export default class Experience {
         this.debug = new Debug();
         this.sizes = new Sizes();
         this.time = new Time();
+        this.events = new Events();
         this.sounds = new Sounds();
         this.scene = new THREE.Scene();
         this.camera = new Camera();
@@ -50,6 +52,8 @@ export default class Experience {
         this.time.on('update', () => {
             this.update();
         });
+
+
 
     }
     resized() {
