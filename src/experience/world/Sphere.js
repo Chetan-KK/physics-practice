@@ -73,8 +73,6 @@ export default class Sphere {
             color: 0xff0000
         }));
 
-        console.log(this.debugProperties);
-
         this.circle.position.set(this.debugProperties.spawnPosition.x, this.debugProperties.height, this.debugProperties.spawnPosition.z);
 
         this.scene.add(this.circle);
@@ -191,6 +189,9 @@ export default class Sphere {
                 this.debugProperties.createSphere();
             }
         });
+    }
+    onClick() {
+        this.debugProperties.createSphere();
     }
     updateSpaceSize(size) {
         this.limit = { positive: size, nigative: -size };

@@ -51,8 +51,6 @@ export default class Box {
 
                 this.x += 2;
 
-                console.log(this.x);
-
                 if (this.x == 10) {
                     this.y += 1;
                     this.x = -10;

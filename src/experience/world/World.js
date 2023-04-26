@@ -18,7 +18,7 @@ export default class World {
             this.isLoaded = true;
 
             this.events.on('canvasClick', () => {
-                console.log("e");
+                this.sphere.onClick();
             });
         });
 

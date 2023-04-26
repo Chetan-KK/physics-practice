@@ -6,5 +6,5 @@ const experience = new Experience(experienceCanvas);
 
 const initial = document.getElementById('initial');
 initial.addEventListener('click', (e) => {
-    e.target.style.display = "none";
+    initial.style.display = "none";
 });

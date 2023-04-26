@@ -34,16 +34,16 @@ export default class Experience {
         this.physics = new Physics();
         this.renderer = new Renderer();
 
-        this.canvas.addEventListener('dblclick', () => {
-            if (!document.fullscreenElement) {
-                if (this.canvas.requestFullscreen) {
-                    this.canvas.requestFullscreen();
-                }
-            }
-            else {
-                document.exitFullscreen();
-            }
-        });
+        // this.canvas.addEventListener('dblclick', () => {
+        //     if (!document.fullscreenElement) {
+        //         if (this.canvas.requestFullscreen) {
+        //             this.canvas.requestFullscreen();
+        //         }
+        //     }
+        //     else {
+        //         document.exitFullscreen();
+        //     }
+        // });
 
         this.sizes.on('resized', () => {
             this.resized();
